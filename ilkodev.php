@@ -71,8 +71,9 @@ $filmler=array(array("baslik" => $filmAdi1,
     foreach($filmler as $film){
         $url_basligi=strtolower(str_replace(" ","-",$film['baslik']));
         $url="https://www.yenifilmler"."/".$url_basligi;
-        echo ""."<br>".$url;
+        echo ""."<br>"."<a href='/'>$url<a/>";
         $film_url=array($url);
+        
     }
 
 
