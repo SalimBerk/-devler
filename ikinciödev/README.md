@@ -3,3 +3,4 @@
 - Her bir film için url bilgisini film başlığına göre oluşturuldu.    
 - "baslik" isminde bir sabit oluşturarak sayfanın h1 etiketinde kullanıldı.
 - HTML entegresi kısmı yapıldı.
+ 
