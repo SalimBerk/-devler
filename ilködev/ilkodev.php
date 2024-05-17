@@ -13,7 +13,7 @@
         "1" => array(
             "baslik" => "Paper Lives",
             "aciklama" => ucfirst(substr("Kağıt toplayarak geçinen ve sağlığı giderek kötüleşen Mehmet terk edilmiş bir çocuk bulur. Birden hayatına giren küçük Ali, onu kendi çocukluğuyla yüzleştirecektir. (18 yaş ve üzeri için uygundur)",0,50))."...",
-            "resim" => "./img/_1.jpeg",
+            "resim" => "1.jpeg",
             "yorumSayisi" => "Yorum: 55",
             "begeniSayisi" => "Beğeni: 85",
             "vizyon" => "Viyonda: Evet",
@@ -25,7 +25,7 @@
         "2" => array(
             "baslik" => "Walking Dead",
             "aciklama" => ucfirst(substr("Zombi kıyametinin ardından hayatta kalanlar, birlikte verdikleri ölüm kalım mücadelesinde insanlığa karşı duydukları umuda tutunur.",0,50))."...",
-            "resim" => "./img/_2.jpeg",
+            "resim" => "2.jpeg",
             "yorumSayisi" => "Yorum: 55",
             "begeniSayisi" => "Beğeni: 85",
             "vizyon" => "Viyonda: Evet",
@@ -37,7 +37,7 @@
     $yeni_film = array(
         "baslik" => "Lucifer",
             "aciklama" => ucfirst(substr("Zombi kıyametinin ardından hayatta kalanlar, birlikte verdikleri ölüm kalım mücadelesinde insanlığa karşı duydukları umuda tutunur.",0,50))."...",
-            "resim" => "./img/_3.jpeg",
+            "resim" => "3.jpeg",
             "yorumSayisi" => "Yorum: 55",
             "begeniSayisi" => "Beğeni: 85",
             "vizyon" => "Viyonda: Evet",
@@ -125,24 +125,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mb-3">
+                                <div class="card mb-3">
                     <div class="row">
                         <div class="col-3">
                         <?php echo
-                            "<img class=\"img-fluid\" src=\"img/{$filmler["0"]["resim"]}\">" ?>
+                            "<img class=\"img-fluid\" src=\"img/{$filmler["2"]["resim"]}\">" ?>
                         </div>
                         <div class="col-9">
                             <div class="card-body">
-                                <h5 class="card-title"><?php echo $filmler["0"]["baslik"]?></h5>
+                                <h5 class="card-title"><?php echo $filmler["2"]["baslik"]?></h5>
                                 <p class="card-text">
-                                <?php echo $filmler["0"]["aciklama"]?>
+                                <?php echo $filmler["2"]["aciklama"]?>
                                 </p>
-                                <p>Link: <?php echo $filmler["0"]["url"]?></p>
+                                <p>Link: <?php echo $filmler["2"]["url"]?></p>
                                 <div>
                                     <span class="badge bg-success">Yapım Tarihi: 03.12.2021</span>
-                                    <span class="badge bg-success"><?php echo $filmler["0"]["yorumSayisi"]?></span>
-                                    <span class="badge bg-success"><?php echo $filmler["0"]["begeniSayisi"]?></span>
-                                    <span class="badge bg-success"><?php echo $filmler["0"]["vizyon"]?></span>
+                                    <span class="badge bg-success"><?php echo $filmler["2"]["yorumSayisi"]?></span>
+                                    <span class="badge bg-success"><?php echo $filmler["2"]["begeniSayisi"]?></span>
+                                    <span class="badge bg-success"><?php echo $filmler["2"]["vizyon"]?></span>
                                     
                                 </div>
                             </div>
