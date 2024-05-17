@@ -5,53 +5,43 @@
 
     array_push($kategori,"Fantastik");
     sort($kategori);
-    function filmUrl($text) {
-        $url_basligi=$text;
-        $url=$url_basligi;
-       
-        return "<a href='/'>$url<a/>";
-      }
+
     
-      function FilmDesc($text){
-        $ilkfilm=$text;
-    $ilkfilm=ucfirst($ilkfilm);
-    $ilkfilm=substr($ilkfilm,0,50)."...";
-    return $ilkfilm;
-      }
+
 
     $filmler = array(
         "1" => array(
             "baslik" => "Paper Lives",
-            "aciklama" => FilmDesc("Kağıt toplayarak geçinen ve sağlığı giderek kötüleşen Mehmet terk edilmiş bir çocuk bulur. Birden hayatına giren küçük Ali, onu kendi çocukluğuyla yüzleştirecektir. (18 yaş ve üzeri için uygundur)"),
+            "aciklama" => ucfirst(substr("Kağıt toplayarak geçinen ve sağlığı giderek kötüleşen Mehmet terk edilmiş bir çocuk bulur. Birden hayatına giren küçük Ali, onu kendi çocukluğuyla yüzleştirecektir. (18 yaş ve üzeri için uygundur)",0,50))."...",
             "resim" => "./img/_1.jpeg",
             "yorumSayisi" => "Yorum: 55",
             "begeniSayisi" => "Beğeni: 85",
             "vizyon" => "Viyonda: Evet",
-            "url"=>filmUrl("Paper Lives")
+            "url"=>"<a href='/'>Paper Lives<a/>",
             
             
             
         ),
         "2" => array(
             "baslik" => "Walking Dead",
-            "aciklama" => filmDesc("Zombi kıyametinin ardından hayatta kalanlar, birlikte verdikleri ölüm kalım mücadelesinde insanlığa karşı duydukları umuda tutunur."),
+            "aciklama" => ucfirst(substr("Zombi kıyametinin ardından hayatta kalanlar, birlikte verdikleri ölüm kalım mücadelesinde insanlığa karşı duydukları umuda tutunur.",0,50))."...",
             "resim" => "./img/_2.jpeg",
             "yorumSayisi" => "Yorum: 55",
             "begeniSayisi" => "Beğeni: 85",
             "vizyon" => "Viyonda: Evet",
-            "url"=>filmUrl("Walking Dead")
+            "url"=>"<a href='/'>Walking Dead<a/>"
             
         )
         );
 
     $yeni_film = array(
         "baslik" => "Lucifer",
-            "aciklama" => filmDesc("Zombi kıyametinin ardından hayatta kalanlar, birlikte verdikleri ölüm kalım mücadelesinde insanlığa karşı duydukları umuda tutunur."),
+            "aciklama" => ucfirst(substr("Zombi kıyametinin ardından hayatta kalanlar, birlikte verdikleri ölüm kalım mücadelesinde insanlığa karşı duydukları umuda tutunur.",0,50))."...",
             "resim" => "./img/_3.jpeg",
             "yorumSayisi" => "Yorum: 55",
             "begeniSayisi" => "Beğeni: 85",
             "vizyon" => "Viyonda: Evet",
-            "url"=>filmUrl("Lucifer")
+            "url"=>"<a href='/'>Lucifer<a/>"
                 );
     
     $filmler["0"] = $yeni_film;
@@ -98,7 +88,7 @@
                                 <p class="card-text">
                                 <?php echo $filmler["1"]["aciklama"]?>
                                 </p>
-                                <p><?php echo $filmler["1"]["url"]?></p>
+                                <p>Link: <?php echo $filmler["1"]["url"]?></p>
                                 <div>
                                     <span class="badge bg-success">Yapım Tarihi: 03.12.2021</span>
                                     <span class="badge bg-success"><?php echo $filmler["1"]["yorumSayisi"]?></span>
@@ -123,7 +113,7 @@
                                 <p class="card-text">
                                 <?php echo $filmler["2"]["aciklama"]?>
                                 </p>
-                                <p><?php echo $filmler["2"]["url"]?></p>
+                                <p>Link: <?php echo $filmler["2"]["url"]?></p>
                                 <div>
                                     <span class="badge bg-success">Yapım Tarihi: 03.12.2021</span>
                                     <span class="badge bg-success"><?php echo $filmler["2"]["yorumSayisi"]?></span>
@@ -147,7 +137,7 @@
                                 <p class="card-text">
                                 <?php echo $filmler["0"]["aciklama"]?>
                                 </p>
-                                <p><?php echo $filmler["0"]["url"]?></p>
+                                <p>Link: <?php echo $filmler["0"]["url"]?></p>
                                 <div>
                                     <span class="badge bg-success">Yapım Tarihi: 03.12.2021</span>
                                     <span class="badge bg-success"><?php echo $filmler["0"]["yorumSayisi"]?></span>
